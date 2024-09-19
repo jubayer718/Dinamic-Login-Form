@@ -23,7 +23,7 @@
                 <div class="stats shadow flex justify-center ">
                   <div class="stat mt-2">
                     <div class="stat-title ">Total Ballance</div>
-                    <div class="stat-value totalBallance">4500</div>
+                    <div id="previous-ballance" class="stat-value totalBallance">4500</div>
                   </div>
                 </div>
                 <div class="divider m-0"></div>
@@ -34,8 +34,8 @@
                 </div>
                 <div class="divider m-0"></div>
 
-
-                <div class="card bg-base-100 mt-0 max-w-sm shrink-0 shadow-2xl">
+                <!-- add-money-form -->
+                <div class=" hidden card bg-base-100 mt-0 max-w-sm shrink-0 shadow-2xl">
                   <form class="card-body ">
                     <div class="form-control ">
                       <label class="label">
@@ -55,17 +55,44 @@
                       </label>
                     </div>
                     <div class="form-control mt-5">
-                      <button class="btn btn-primary login">Login</button>
+                      <button class="btn btn-primary login">add money</button>
                     </div>
                   </form>
                 </div>
+                <!-- cash out-form -->
+                <div class="  card bg-base-100 mt-0 max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body ">
+                    <div class="form-control ">
+                      <label class="label">
+                        <span class="label-text">cash out</span>
+                      </label>
+                      <input id="cash-out-form" type="number" placeholder="cash out " class="input input-bordered"
+                        required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Password</span>
+                      </label>
+                      <input id="cashOut-pin" type="password" placeholder="password" class="input input-bordered"
+                        required />
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                      </label>
+                    </div>
+                    <div class="form-control mt-5">
+                      <button id="cashOut" class="btn btn-primary ">Cash out</button>
+                    </div>
+                  </form>
+                </div>
+                <!-- cash out form end -->
               </div>
             </div>
           </div>
         </div>
       </div>
   </main>
-  <script src="/JS/home.js"></script>
+  <script src="JS/home.js"></script>
+  <script src="JS/cash-out.js"></script>
 </body>
 
 </html>

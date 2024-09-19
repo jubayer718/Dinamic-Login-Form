@@ -17,7 +17,7 @@ document.querySelector('.btn-login').addEventListener('click', function (event) 
   // console.log(phoneNumber,pinNumber);
   if (phoneNumber === '01753' && pinNumber === '2462') {
     console.log('you are logged in')
-    window.location.href='/home.html'
+    window.location.href='home.html'
   } else {
     alert('you are wrong person')
   }
